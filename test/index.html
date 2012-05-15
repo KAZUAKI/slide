@@ -1,0 +1,147 @@
+<!doctype html>  
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title class="l_coursename">Building Native Mobile Apps with Titanium</title>
+		<meta name="description" content="Building Native Mobile Apps with Titanium">
+    	<meta name="author" content="Appcelerator, Inc." />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../reveal.js/css/reset.css">
+		<link rel="stylesheet" href="../reveal.js/css/main.css">
+		<link rel="stylesheet" href="css/magula.css">
+		<link rel="stylesheet" href="css/presentation.css">
+		<script type="text/javascript" src="../js/l10n.js"></script>
+		<script type="text/javascript" src="i18n/localizations.js"></script>
+
+		<script>
+		function loadStyleSheet(url){
+		    if(document.createStyleSheet) {
+		        try {document.createStyleSheet(url);} catch (e) { }
+		    }
+		    else{
+		        var css;
+		        css         = document.createElement('link');
+		        css.rel     = 'stylesheet';
+		        css.type    = 'text/css';
+		        css.media   = "all";
+		        css.href    = url;
+		        document.getElementsByTagName("head")[0].appendChild(css);
+		    }
+		}
+		var browserlang = document.documentElement.lang || String.locale || 'en-US';
+		loadStyleSheet('css/'+browserlang+'.css');
+		</script>
+		<link rel="stylesheet" href="../reveal.js/css/print.css" media="print">
+	</head>
+	
+	<body>
+		<div id="reveal">	
+			<!-- Any section element inside of this container is displayed as a slide -->
+
+			<!--
+				SLIDE INSTRUCTIONS:
+					- Set the <title> tag to this course's US English title
+					- Set the <meta description tag to the US English course title
+					- Update the pre-defined slides to include the name, and links to each lesson's
+						corresponding file
+					- Each text tag (<p> or <li> or <h1> etc.) must have a class name that begins with
+						"l_" and is unique. Each of those class names must be added to the i18n/localizations.js
+						file and their values must be set equal to the US English version of the strings. That 
+						file is used for translation and its contents OVERRIDES the text in this file.
+			-->
+
+
+			<div class="slides">
+				
+				<section>
+					<h1 style="margin-top:100px;" class="l_welcome">Welcome To</h1>
+					<h5 class="l_coursename">COURSE NAME</h5>
+					<script>
+						// DO NOT REMOVE THIS, MUST BE INCLUDED WITH THE FIRST SLIDE
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+						document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+				
+				<section id="agenda1">
+					<h1 style="margin-top:50px;" class="l_agenda1_title">AGENDA</h1>
+			    	<ul>
+			    		<li><a href="000/index.html" class="l_lesson1">Course Introduction</a></li>
+			    		<li><a href="205/index.html" class="l_lesson2">LESSON 2 TITLE</a></li>
+			    		<li><a href="210/index.html" class="l_lesson3">LESSON 3 TITLE</a></li>
+			    		<li><a href="215/index.html" class="l_lesson4">LESSON 4 TITLE</a></li>
+			    		<li><a href="218/index.html" class="l_lesson5">LESSON 5 TITLE</a></li>
+			    		<li><a href="220/index.html" class="l_lesson6">LESSON 6 TITLE</a></li>
+			    		<li><a href="250/index.html" class="l_lesson7">LESSON 7 TITLE</a></li>
+			    	</ul>
+				</section>
+
+				<section id="agenda2">
+					<h1 style="margin-top:50px;" class="l_agenda2_title">AGENDA, continued</h1>
+			    	<ul>
+			    		<li><a href="255/index.html" class="l_lesson8">LESSON 8 TITLE</a></li>
+			    		<li><a href="260/index.html" class="l_lesson9">LESSON 9 TITLE</a></li>
+			    		<li><a href="270/index.html" class="l_lesson10">LESSON 10 TITLE</a></li>
+			    		<li><a href="275/index.html" class="l_lesson11">LESSON 11 TITLE</a></li>
+			    		<li><a href="285/index.html" class="l_lesson12">LESSON 12 TITLE</a></li>
+			    		<li><a href="295/index.html" class="l_lesson13">LESSON 13 TITLE</a></li>
+			    	</ul>
+				</section>
+				
+				<!-- DUPLICATE AGENDA SLIDE OR DELETE EXTRAS AS NECESSARY -->
+
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+
+		
+		<script src="../reveal.js/js/reveal.js"></script>
+		<script src="../reveal.js/lib/highlight.js"></script>
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+		<script src="../js/localize.js"></script>
+	</body>
+</html>

@@ -1,0 +1,215 @@
+#agenda ul {
+    width: 500px;
+    float: left;
+}
+ 
+#agenda img {
+    width: 300px;
+    float: right;
+}
+ 
+#howitworks h1 {
+    margin-top: 80px;
+}
+ 
+#howitworks ul {
+    width: 500px;
+    float: left;
+}
+ 
+#howitworks img {
+    width: 300px;
+    float: right;
+}
+ 
+#workflow h2 {
+    margin-top: 80px;
+}
+ 
+#workflow ul {
+    width: 400px;
+    float: left;
+}
+ 
+#workflow pre {
+    width: 450px;
+    float: right;
+}
+ 
+#appcnews h2 {
+    margin-top: 80px;
+}
+ 
+#appcnews ul {
+    width: 600px;
+    float: left;
+    margin-top: 50px;
+}
+ 
+#appcnews img {
+    width: 250px;
+    float: right;
+}
+/*
+	SELECTORS FOR PRESENTATION NOTES
+*/
+#appclogo {
+	/* ICON/BUTTON IN SLIDESHOW */
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 90px;
+	height: 50px;
+}
+#presenternotes {
+	/* ICON/BUTTON IN SLIDESHOW */
+	position: absolute;
+	bottom: 32px;
+	left: 125px;
+	width: 36px;
+	height: 36px;
+}
+.slidenote {
+	/* HIDES PRESENTER NOTES IN THE SLIDESHOW ITSELF */
+	display:none;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-Semibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo';
+	src: url('../../presentation-engine/fonts/MuseoSans_700.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+#presenter {
+	/* CONTROLS TEXT OUTPUT IN THE PRESENTER NOTES WINDOW */
+	margin:5px 10px;
+	font-size: 0.65em !important;
+	font-family: 'Open Sans';
+}
+.nestedarrow {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom:0;
+	left:50%;
+	margin: 0;
+	background: rgba(0,0,0,0) !important;
+	border: 0px !important;
+}
+.nestedarrow img {
+	margin: 0;
+	background: rgba(0,0,0,0) !important;
+	border: 0px !important;
+	width: 50px;
+	height: 50px;
+	
+}
+
+/*
+	TRAINING SPECIFIC OVERRIDES OF DEFAULT TITAN/REVEAL CSS CLASSES
+*/
+
+html {
+	background: #A2BCC6;
+	background: -moz-radial-gradient(center, ellipse cover, #ddd 0%, #A2BCC6 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ddd), color-stop(100%,#A2BCC6));
+	background: -webkit-radial-gradient(center, ellipse cover, #ddd 0%,#A2BCC6 100%);
+	background: -o-radial-gradient(center, ellipse cover, #ddd 0%,#A2BCC6 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #ddd 0%,#A2BCC6 100%);
+	background: radial-gradient(center, ellipse cover, #ddd 0%,#A2BCC6 100%);
+}
+#reveal h1, 
+#reveal h2, 
+#reveal h3, 
+#reveal h4 {
+	color: #222;
+	text-shadow: 0.02em 0.02em 0.07em #666;
+}
+p, div, li, td, h5 { color: #222 !important; font-family: 'Museo' !important; }
+section a { color: #222 !important; text-decoration:underline !important;}
+li { padding-bottom: 5px; }
+
+#reveal pre code {
+	font-size: 1.5em !important;
+	line-height: 1.2em;
+}
+
+#reveal .slides {
+	position: absolute;
+	width: 1024px;
+	height: 800px;
+	
+	left: 50%;
+	top: 40%;
+	margin-left: -516px;
+	margin-top: -320px;
+	padding: 20px 0px;
+}
+/* small screen version */
+.smallscreen {
+	width: 780px !important;
+	height: 640px !important;
+	margin-left: -390px !important;
+	margin-top: -280px !important;
+}
+
+
+#reveal .controls a {
+	opacity: 0.25 !important;
+}
+#reveal .controls a.enabled {
+	color: #9A0707 !important;
+	opacity: 0.6 !important;
+}
+#reveal .progress span {
+	background: #9A0707 !important;
+}
+#reveal h1, #reveal h2, #reveal h3 {
+    text-transform: none;
+    font-variant: small-caps;
+}
+
+/* FOR THE LAB SLIDES */
+#labwrapper a:not(.image) {
+	text-decoration:underline;
+}
+#labwrapper ul {
+	margin-left:30px;
+}
+#labwrapper h1 {
+	font-size: 2.75em;
+}
+#labwrapper h2 {
+	font-size: 2.5em;
+}
+#labwrapper {
+	margin: 0 10px;
+	font-size: 0.6em;
+	line-height: 1.25em;
+	text-align: left !important;
+	overflow-x: scroll;
+	overflow-y: visible;
+	height: 100%;
+	width: 950px;
+}
+#labwrapper table {
+	border: 0;
+	width: 90%;
+	margin: 0 35px 0 10px;
+}
+.tdfiller {
+	width: 80px;
+}
+.labinstructions {
+	padding-left:24px;
+	text-indent:-24px;
+}
+.labexplanations {
+	font-style: italic;
+	padding-bottom: 20px;
+}
